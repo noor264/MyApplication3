@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A8EADB"
+    android:background="#BFF4DC"
     tools:context=".Login">
 
     <EditText
@@ -33,9 +33,9 @@
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="111dp"
-        android:layout_height="74dp"
-        android:backgroundTint="#082919"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#0A5841"
         android:drawableTint="#FFFFFF"
         android:foregroundTint="#EFE0E0"
         android:onClick="login"
@@ -43,6 +43,6 @@
         android:text="log in "
         android:textColor="#FFFFFF"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="399dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

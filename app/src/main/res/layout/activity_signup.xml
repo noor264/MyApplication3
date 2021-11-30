@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BFF4DC"
+    android:backgroundTint="#BFF4DC"
     tools:context=".Signup">
 
     <EditText
@@ -14,9 +16,9 @@
         android:hint="user name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="180dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="180dp" />
 
     <EditText
         android:id="@+id/etPasswordS"
@@ -26,18 +28,18 @@
         android:hint="password"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="278dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="278dp" />
 
     <Button
         android:id="@+id/button_signup"
         android:layout_width="123dp"
         android:layout_height="80dp"
-        android:background="@color/teal_700"
+        android:backgroundTint="#0A5841"
         android:text="Signup"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="387dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="400dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
