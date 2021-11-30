@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    android:background="#A8EADB"
+    tools:context=".Login">
 
     <EditText
         android:id="@+id/etUsername"
@@ -13,6 +14,8 @@
         android:ems="10"
         android:hint="user name"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="182dp" />
 
@@ -23,16 +26,23 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="282dp" />
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="log in "
+        android:layout_width="111dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#082919"
+        android:drawableTint="#FFFFFF"
+        android:foregroundTint="#EFE0E0"
         android:onClick="login"
-        android:background="@color/teal_700"
+        android:shadowColor="#FFF9F9"
+        android:text="log in "
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="401dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

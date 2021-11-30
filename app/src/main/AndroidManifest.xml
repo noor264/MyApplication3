@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".addPlayer"
+            android:exported="true" />
+        <activity
             android:name=".Signup"
             android:exported="true" />
         <activity

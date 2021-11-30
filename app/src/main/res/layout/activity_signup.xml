@@ -15,7 +15,8 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="180dp" />
+        tools:layout_editor_absoluteY="180dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etPasswordS"
@@ -26,7 +27,8 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="278dp" />
+        tools:layout_editor_absoluteY="278dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_signup"
@@ -36,5 +38,6 @@
         android:text="Signup"
         android:textColor="#000000"
         tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="387dp" />
+        tools:layout_editor_absoluteY="387dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
