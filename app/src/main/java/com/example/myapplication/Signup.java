@@ -15,47 +15,55 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Signup extends AppCompatActivity {
 
-    private EditText et_UsernameS, et_PasswordS;
-    private FirebaseAuth auth;
+    private EditText etUsername,etPassword;
+    private Utilities utils;
+    private FirebaseServices fbs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_signup);
 
-        et_UsernameS = findViewById(R.id.etUsernameS);
-        et_PasswordS= findViewById(R.id.etPasswordS);
-        auth = FirebaseAuth.getInstance();
+        connectComponents();
+    }
+
+    private void connectComponents() {
+        etUsername = findViewById(R.id.etUsernameS);
+        etPassword = findViewById(R.id.etPasswordS);
+        utils = Utilities.getInstance();
+        fbs = FirebaseServices.getInstance();
     }
 
     public void signup(View view) {
 
-        // TODO: 1- Get data from screen
-        String username = et_UsernameS.getText().toString();
-        String password = et_UsernameS.getText().toString();
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
 
-        // TODO: 2- Data validation
         if (username.trim().isEmpty() || password.trim().isEmpty())
         {
-            Toast.makeText(this, "Username or password is missing!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Some fields are empty!", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        // TODO: 3- Check username and password with Firebase Authentication
-        auth.createUserWithEmailAndPassword(username, password)
+        if (!utils.validateEmail(username) || !utils.validatePassword(password))
+        {
+            Toast.makeText(this, "Incorrect email or password!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        fbs.getAuth().createUserWithEmailAndPassword(username, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // TODO: commands if successful
+                            Toast.makeText(Signup.this, "successfully registered", Toast.LENGTH_SHORT).show();
+
                         } else {
+                            // TODO: what to do if fails
+                        }
+                    }
+                });
 
 
-                            Toast.makeText(Signup.this,
-                                    "Username or password is empty!",
-                                    Toast.LENGTH_SHORT).show();
-                            return;
-
-                        }}});
     }
 }

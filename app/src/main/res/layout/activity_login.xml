@@ -11,30 +11,37 @@
         android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:hint="user name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="123dp"
-        android:layout_height="80dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="252dp"
         android:backgroundTint="#0A5841"
         android:drawableTint="#FFFFFF"
         android:foregroundTint="#EFE0E0"
@@ -42,7 +49,9 @@
         android:shadowColor="#FFF9F9"
         android:text="log in "
         android:textColor="#FFFFFF"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

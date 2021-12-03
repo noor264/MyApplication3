@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_Add_Instrument.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_add_player.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_firebase_services.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_firsbase_servecies.xml" value="0.1" />
@@ -10,6 +11,8 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_signup.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_test_sound.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_utilities.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
